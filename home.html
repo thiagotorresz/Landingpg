@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Village Resort</title>
+    <link rel="stylesheet" href="estilo/style.css">
+
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+
+</head>
+
+<body>
+    <header>
+        <img src="imagens/village-logo.png" alt="Village Resort" id="logo">
+        <nav>
+            <img src="imagens/menu.png" alt="Menu">
+        </nav>
+    </header>
+
+    <main>
+        <div id="olha">
+            <h1>
+                OLHA AS FÉRIAS...
+            </h1>
+            <span>
+                É VERDADE!
+            </span>
+            <p>
+                É Arraiá meu povo! Chegou as Férias Julina do Village. O mês inteiro de festança para você. Comidas
+                típicas, barraca de jogos, quadrilha, queima de fogos, fogueira gigaaante e muito mais!
+            </p>
+
+            <button class="reserve">
+                Reserve agora
+            </button>
+
+            <button class="arraia">
+                <img src="imagens/Icon.png" alt="icon"> Arraiá 2023
+            </button>
+        </div>
+
+        <div class="bom">
+            <p>
+                Tudo de bom! <br>
+                <span>Curta sem limite</span>
+            </p>
+        </div>
+
+        <div class="slider-container">
+            <div class="slider" id="slider1">
+                <div class="slides">
+                    <div class="slide active">
+                        <img src="imagens/adventure.png" alt="Imagem 1">
+                        <h1>Village Adventure</h1>
+                    </div>
+                    <div class="slide">
+                        <img src="imagens/fazenda-a.png" alt="Imagem 2">
+                        <h1>Fazendinha</h1>
+                    </div>
+                    <div class="slide">
+                        <img src="imagens/kids.png" alt="Imagem 3">
+                        <h1>Village Kids</h1>
+                    </div>
+                </div>
+                <a class="prev" onclick="changeSlide(-1, 'slider1')">&#10094;</a>
+                <a class="next" onclick="changeSlide(1, 'slider1')">&#10095;</a>
+            </div>
+
+            <button class="reserve" id="centro">
+                Reserve agora
+            </button>
+        </div>
+
+        <script src="scripts.js"></script>
+
+        <div>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3759.84257354274!2d-43.77954972594989!3d-19.54837112653603!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xa5d84614aa7683%3A0x21c1267eb285da7!2sVillage%20Resort!5e0!3m2!1spt-BR!2sbr!4v1719951118202!5m2!1spt-BR!2sbr"
+                width="592" height="1004" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+
+        <div class="comentarios">
+            <span>
+                Bom demais, uai
+            </span>
+            <p>
+                Aqui no Village toda família fica feliz! São mais de
+                26 atrações todos os dias. Seja relaxar ou festejar, temos o que você está precisando!
+            </p>
+        </div>
+
+        <div class="slider" id="slider2">
+            <div class="slides">
+                <div class="slide active">
+                    <div class="sli">
+                        <h2><img src="imagens/galo.jpg" alt="fsd"> Familia Torres <span>jabó</span></h2>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore quasi fuga necessitatibus amet ea nisi nobis. Provident, quidem, officiis corporis velit asperiores inventore voluptatibus praesentium unde sint pariatur totam voluptates.</p>
+                        <span>6:58 04/07/2024</span>
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="sli">
+                        <h2><img src="imagens/galo.jpg" alt="fsd"> Familia Torres <span>jabó</span></h2>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore quasi fuga necessitatibus amet ea nisi nobis. Provident, quidem, officiis corporis velit asperiores inventore voluptatibus praesentium unde sint pariatur totam voluptates.</p>
+                        <span>6:58 04/07/2024</span>
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="sli">
+                        <h2><img src="imagens/galo.jpg" alt="fsd"> Familia Torres <span>jabó</span></h2>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore quasi fuga necessitatibus amet ea nisi nobis. Provident, quidem, officiis corporis velit asperiores inventore voluptatibus praesentium unde sint pariatur totam voluptates.</p>
+                        <span>6:58 04/07/2024</span>
+                    </div>
+                </div>
+            </div>
+            <a class="prev" onclick="changeSlide(-1, 'slider2')">&#10094;</a>
+            <a class="next" onclick="changeSlide(1, 'slider2')">&#10095;</a>
+        </div>
+
+        <div class="comentarios" id="oferta">
+            <span>
+                Melhores <br> ofertas
+            </span>
+            <p>
+                Corre, antes que acabe! <br>
+                Aproveite nossas ofertas especiais e garanta momentos inesquecíveis com quem você ama.
+            </p>
+        </div>
+
+        <div class="slider" id="slider3">
+            <div class="slides">
+                <div class="slide active">
+                    <div class="off">
+                        <p id="icons"><img src="imagens/raio.png" alt=""> Melhor oferta &#x1F525;</p>
+                        <h2>Premium</h2>
+                        <p>Perfeito para casais com até 03 filhos</p>
+
+                        <img src="" alt="">
+
+                        6xR4100,00 <span>/diaria</span>
+                        <p>Pacote incluso:</p>
+                        <ul>
+                            <li>gfdfgdfg</li>
+                            <li>gsddf</li>
+                            <li>vcdfsvdesfv</li>
+                            <li>fsvfdvfdv</li>
+                            <li>hfdviu</li>
+                        </ul>
+
+                        <button class="reserve" id="centro">
+                            Reserve agora
+                        </button>
+                    </div>
+                </div>
+                <div class="slide">
+                    <img src="imagens/Pricing tier card.png" alt="Imagem 5">
+                </div>
+                <div class="slide">
+                    <img src="imagens/Pricing tier card.png" alt="Imagem 6">
+                </div>
+            </div>
+            <a class="prev" onclick="changeSlide(-1, 'slider3')">&#10094;</a>
+            <a class="next" onclick="changeSlide(1, 'slider3')">&#10095;</a>
+        </div>
+
+        <div id="perguntas">
+            <h1>Perguntas frequentes</h1>
+            <aside class="pergunta">
+                <h2>
+                    Pergunta
+                </h2>
+                <img src="imagens/arrow-down.png" alt="">
+                <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta quidem maiores nemo commodi
+                    similique. Soluta ipsam dolores, numquam optio dicta inventore dolor repellat, laboriosam blanditiis
+                    libero consequatur velit esse fugiat.
+                </p>
+            </aside>
+            <aside class="pergunta">
+                <h2>
+                    Pergunta
+                </h2>
+                <img src="imagens/arrow-down.png" alt="">
+                <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta quidem maiores nemo commodi
+                    similique. Soluta ipsam dolores, numquam optio dicta inventore dolor repellat, laboriosam blanditiis
+                    libero consequatur velit esse fugiat.
+                </p>
+            </aside>
+            <aside class="pergunta">
+                <h2>
+                    Pergunta
+                </h2>
+                <img src="imagens/arrow-down.png" alt="">
+                <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta quidem maiores nemo commodi
+                    similique. Soluta ipsam dolores, numquam optio dicta inventore dolor repellat, laboriosam blanditiis
+                    libero consequatur velit esse fugiat.
+                </p>
+            </aside>
+
+        </div>
+    </main>
+
+    <footer>
+        <img src="imagens/village-branco.png" alt="Village" id="village">
+        <div id="contato">
+            <img src="imagens/insta-p.png" alt="Instagram">
+            <img src="imagens/facebook-p.png" alt="Facebook">
+            <img src="imagens/wpp-p.png" alt="WhatsApp">
+            <img src="imagens/linkedin-p.webp" alt="Linkedin">
+        </div>
+
+        <div id="email">
+            <input type="email" name="email" id="email">
+            <input type="submit" value="INSCREVER" id="enviar">
+        </div>
+
+        <h1>
+            POLÍTICAS
+        </h1>
+        <p>Acessibilidade</p>
+        <p>Política de privacidade</p>
+        <p>Política de cancelamento</p>
+
+        <h1>
+            PACOTES
+        </h1>
+        <p>Dia dos Pais</p>
+        <p>Feriadou - Setembro</p>
+        <p>Dia das Crianças</p>
+        <p>Halloween</p>
+        <p>Feriadou - Novembro</p>
+        <p>Natal Encantado Village</p>
+        <p>Reveillon no Village Resort</p>
+
+        <h1>
+            CONTATO
+        </h1>
+        <p>31 3482 1000</p>
+        <p>contato@villageresort.com.br</p>
+        <p id="cep">Fazenda Coqueiral, 84, Zona Rural, Jaboticatubas-MG, 35830-000</p>
+        
+    </footer>
+</body>
+
+</html>
