@@ -6,18 +6,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Village Resort</title>
     <link rel="stylesheet" href="estilo/style.css">
-
-    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
-
 </head>
 
+                            <!-- LOGO E MENU TOPO -->
 <body>
     <header>
         <img src="imagens/village-logo.png" alt="Village Resort" id="logo">
         <nav>
-            <img src="imagens/menu.png" alt="Menu">
+            <img src="imagens/menu.png" alt="Menu" id="toggleMenu">
+            <div class="sidebar" id="sidebar">
+                <ul id="menuf">
+                    <li><a href="#">Item 1</a></li>
+                    <li><a href="#">Item 2</a></li>
+                    <li><a href="#">Item 3</a></li>
+                    <li><a href="#">Item 4</a></li>
+                </ul>
+            </div>
         </nav>
     </header>
+
+                            <!-- OLHA FÉRIAS - ARRAIÁ 2023 -->
 
     <main>
         <div id="olha">
@@ -36,10 +44,14 @@
                 Reserve agora
             </button>
 
-            <button class="arraia">
-                <img src="imagens/Icon.png" alt="icon"> Arraiá 2023
-            </button>
+            <a href="https://youtu.be/XL3IuRH1R6I?si=nf_5b5L0ZHpc8CCP" target="_blank">
+                <button class="arraia">
+                    <img src="imagens/Icon.png" alt="icon"> Arraiá 2023
+                </button>
+            </a>
         </div>
+
+                                <!-- SLIDES LOCAIS RESORT  -->
 
         <div class="bom">
             <p>
@@ -51,18 +63,28 @@
         <div class="slider-container">
             <div class="slider" id="slider1">
                 <div class="slides">
-                    <div class="slide active">
-                        <img src="imagens/adventure.png" alt="Imagem 1">
-                        <h1>Village Adventure</h1>
-                    </div>
-                    <div class="slide">
-                        <img src="imagens/fazenda-a.png" alt="Imagem 2">
-                        <h1>Fazendinha</h1>
-                    </div>
-                    <div class="slide">
-                        <img src="imagens/kids.png" alt="Imagem 3">
-                        <h1>Village Kids</h1>
-                    </div>
+
+                    <a href="https://villageresort.com.br/gallery/details/46" target="_blank">
+                        <div class="slide active">
+                            <img src="imagens/adventure.png" alt="Imagem 1" class="local">
+                            <h1>Village Adventure</h1>
+                        </div>
+                    </a>
+
+                    <a href="https://villageresort.com.br/gallery/details/40" target="_blank">
+                        <div class="slide">
+                            <img src="imagens/fazenda-a.png" alt="Imagem 2" class="local">
+                            <h1>Fazendinha</h1>
+                        </div>
+                    </a>
+
+                    <a href="https://villageresort.com.br/gallery/details/39" target="_blank">
+                        <div class="slide">
+                            <img src="imagens/kids.png" alt="Imagem 3" class="local">
+                            <h1>Village Kids</h1>
+                        </div>
+                    </a>
+
                 </div>
                 <a class="prev" onclick="changeSlide(-1, 'slider1')">&#10094;</a>
                 <a class="next" onclick="changeSlide(1, 'slider1')">&#10095;</a>
@@ -75,12 +97,16 @@
 
         <script src="scripts.js"></script>
 
+                                <!-- MAPA -->
+
         <div>
             <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3759.84257354274!2d-43.77954972594989!3d-19.54837112653603!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xa5d84614aa7683%3A0x21c1267eb285da7!2sVillage%20Resort!5e0!3m2!1spt-BR!2sbr!4v1719951118202!5m2!1spt-BR!2sbr"
                 width="592" height="1004" style="border:0;" allowfullscreen="" loading="lazy"
                 referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
+
+                            <!-- SLIDES COMENTÁRIOS -->
 
         <div class="comentarios">
             <span>
@@ -97,28 +123,39 @@
                 <div class="slide active">
                     <div class="sli">
                         <h2><img src="imagens/galo.jpg" alt="fsd"> Familia Torres <span>jabó</span></h2>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore quasi fuga necessitatibus amet ea nisi nobis. Provident, quidem, officiis corporis velit asperiores inventore voluptatibus praesentium unde sint pariatur totam voluptates.</p>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore quasi fuga necessitatibus
+                            amet ea nisi nobis. Provident, quidem, officiis corporis velit asperiores inventore
+                            voluptatibus praesentium unde sint pariatur totam voluptates.</p>
                         <span>6:58 04/07/2024</span>
                     </div>
                 </div>
+
                 <div class="slide">
                     <div class="sli">
                         <h2><img src="imagens/galo.jpg" alt="fsd"> Familia Torres <span>jabó</span></h2>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore quasi fuga necessitatibus amet ea nisi nobis. Provident, quidem, officiis corporis velit asperiores inventore voluptatibus praesentium unde sint pariatur totam voluptates.</p>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore quasi fuga necessitatibus
+                            amet ea nisi nobis. Provident, quidem, officiis corporis velit asperiores inventore
+                            voluptatibus praesentium unde sint pariatur totam voluptates.</p>
                         <span>6:58 04/07/2024</span>
                     </div>
                 </div>
+
                 <div class="slide">
                     <div class="sli">
                         <h2><img src="imagens/galo.jpg" alt="fsd"> Familia Torres <span>jabó</span></h2>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore quasi fuga necessitatibus amet ea nisi nobis. Provident, quidem, officiis corporis velit asperiores inventore voluptatibus praesentium unde sint pariatur totam voluptates.</p>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore quasi fuga necessitatibus
+                            amet ea nisi nobis. Provident, quidem, officiis corporis velit asperiores inventore
+                            voluptatibus praesentium unde sint pariatur totam voluptates.</p>
                         <span>6:58 04/07/2024</span>
                     </div>
                 </div>
+
             </div>
             <a class="prev" onclick="changeSlide(-1, 'slider2')">&#10094;</a>
             <a class="next" onclick="changeSlide(1, 'slider2')">&#10095;</a>
         </div>
+
+                            <!-- SLIDES OFERTAS    -->
 
         <div class="comentarios" id="oferta">
             <span>
@@ -133,85 +170,133 @@
         <div class="slider" id="slider3">
             <div class="slides">
                 <div class="slide active">
-                    <div class="off">
-                        <p id="icons"><img src="imagens/raio.png" alt=""> Melhor oferta &#x1F525;</p>
+                    <div class="off" id="azul">
+                        <p id="icons"><img src="imagens/raio.png" alt=""> <span>Melhor oferta &#x1F525;</span></p>
                         <h2>Premium</h2>
                         <p>Perfeito para casais com até 03 filhos</p>
 
-                        <img src="" alt="">
+                        <img src="imagens/premium.png" alt="">
 
-                        6xR4100,00 <span>/diaria</span>
+                        <h3>6xR$400,00</h3>
                         <p>Pacote incluso:</p>
                         <ul>
-                            <li>gfdfgdfg</li>
-                            <li>gsddf</li>
-                            <li>vcdfsvdesfv</li>
-                            <li>fsvfdvfdv</li>
-                            <li>hfdviu</li>
+                            <li> gfdfgdfg</li>
+                            <li> gsddf</li>
+                            <li> vcdfsvdesfv</li>
+                            <li> fsvfdvfdv</li>
+                            <li> hfdviu</li>
                         </ul>
 
-                        <button class="reserve" id="centro">
+                        <button class="reserve">
                             Reserve agora
                         </button>
                     </div>
                 </div>
+
                 <div class="slide">
-                    <img src="imagens/Pricing tier card.png" alt="Imagem 5">
+                    <div class="off">
+                        <p id="icons"><img src="imagens/raio.png" alt=""> <span>Melhor oferta &#x1F525;</span></p>
+                        <h2>Premium</h2>
+                        <p>Perfeito para casais com até 03 filhos</p>
+
+                        <img src="imagens/premium.png" alt="">
+
+                        <h3>6xR$400,00</h3>
+                        <p>Pacote incluso:</p>
+                        <ul>
+                            <li> gfdfgdfg</li>
+                            <li> gsddf</li>
+                            <li> vcdfsvdesfv</li>
+                            <li> fsvfdvfdv</li>
+                            <li> hfdviu</li>
+                        </ul>
+
+                        <button class="reserve">
+                            Reserve agora
+                        </button>
+                    </div>
                 </div>
+
                 <div class="slide">
-                    <img src="imagens/Pricing tier card.png" alt="Imagem 6">
+                    <div class="off">
+                        <p id="icons"><img src="imagens/raio.png" alt=""> <span>Melhor oferta &#x1F525;</span></p>
+                        <h2>Premium</h2>
+                        <p>Perfeito para casais com até 03 filhos</p>
+
+                        <img src="imagens/premium.png" alt="">
+
+                        <h3>6xR$400,00</h3>
+                        <p>Pacote incluso:</p>
+                        <ul>
+                            <li> gfdfgdfg</li>
+                            <li> gsddf</li>
+                            <li> vcdfsvdesfv</li>
+                            <li> fsvfdvfdv</li>
+                            <li> hfdviu</li>
+                        </ul>
+
+                        <button class="reserve">
+                            Reserve agora
+                        </button>
+                    </div>
                 </div>
+
             </div>
             <a class="prev" onclick="changeSlide(-1, 'slider3')">&#10094;</a>
             <a class="next" onclick="changeSlide(1, 'slider3')">&#10095;</a>
         </div>
 
+                            <!-- PERGUNTAS FREQUENTES  -->
+
         <div id="perguntas">
             <h1>Perguntas frequentes</h1>
-            <aside class="pergunta">
+
+            <aside class="pergunta" onclick="toggleTexto0()">
                 <h2>
                     Pergunta
                 </h2>
                 <img src="imagens/arrow-down.png" alt="">
-                <p>
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta quidem maiores nemo commodi
-                    similique. Soluta ipsam dolores, numquam optio dicta inventore dolor repellat, laboriosam blanditiis
-                    libero consequatur velit esse fugiat.
-                </p>
             </aside>
-            <aside class="pergunta">
+            <div id="texto-escondido0">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas ut sapiente, fuga laboriosam at
+                    sit quam omnis quibusdam labore, esse ratione aperiam aspernatur optio dolore exercitationem nulla
+                    autem? In, neque.</p>
+            </div>
+
+            <aside class="pergunta" onclick="toggleTexto1()">
                 <h2>
                     Pergunta
                 </h2>
                 <img src="imagens/arrow-down.png" alt="">
-                <p>
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta quidem maiores nemo commodi
-                    similique. Soluta ipsam dolores, numquam optio dicta inventore dolor repellat, laboriosam blanditiis
-                    libero consequatur velit esse fugiat.
-                </p>
             </aside>
-            <aside class="pergunta">
+            <div id="texto-escondido1">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas ut sapiente, fuga laboriosam at sit quam omnis quibusdam labore, esse ratione aperiam aspernatur optio dolore exercitationem nulla autem? In, neque.</p>
+            </div>
+
+            <aside class="pergunta" onclick="toggleTexto2()">
                 <h2>
                     Pergunta
                 </h2>
                 <img src="imagens/arrow-down.png" alt="">
-                <p>
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta quidem maiores nemo commodi
-                    similique. Soluta ipsam dolores, numquam optio dicta inventore dolor repellat, laboriosam blanditiis
-                    libero consequatur velit esse fugiat.
-                </p>
             </aside>
+            <div id="texto-escondido2">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas ut sapiente, fuga laboriosam at
+                    sit quam omnis quibusdam labore, esse ratione aperiam aspernatur optio dolore exercitationem nulla
+                    autem? In, neque.</p>
+            </div>
 
         </div>
     </main>
 
+                    <!-- RODAPÉ -->
+
     <footer>
         <img src="imagens/village-branco.png" alt="Village" id="village">
         <div id="contato">
-            <img src="imagens/insta-p.png" alt="Instagram">
-            <img src="imagens/facebook-p.png" alt="Facebook">
-            <img src="imagens/wpp-p.png" alt="WhatsApp">
-            <img src="imagens/linkedin-p.webp" alt="Linkedin">
+            <a href="https://www.instagram.com/villageresortmg" target="_blank"><img src="imagens/insta-p.png" alt="Instagram"></a>
+            <a href="https://www.facebook.com/villageresortminasgerais" target="_blank"><img src="imagens/facebook-p.png" alt="Facebook"></a>
+            <a href="https://wa.me/31972332958" target="_blank"><img src="imagens/wpp-p.png" alt="WhatsApp"></a>
+            <a href="https://www.linkedin.com/company/villageresort" target="_blank"><img src="imagens/linkedin-p.webp" alt="Linkedin"></a>
         </div>
 
         <div id="email">
@@ -222,7 +307,9 @@
         <h1>
             POLÍTICAS
         </h1>
-        <p>Acessibilidade</p>
+        <a href="https://villageresort.com.br/accessibillity" target="_blank"> 
+            <p>Acessibilidade</p>
+        </a>
         <p>Política de privacidade</p>
         <p>Política de cancelamento</p>
 
@@ -241,9 +328,9 @@
             CONTATO
         </h1>
         <p>31 3482 1000</p>
-        <p>contato@villageresort.com.br</p>
+        <p>contato@villageresort.com.br</p> <br>
         <p id="cep">Fazenda Coqueiral, 84, Zona Rural, Jaboticatubas-MG, 35830-000</p>
-        
+
     </footer>
 </body>
 

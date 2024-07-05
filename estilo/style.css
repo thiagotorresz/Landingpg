@@ -8,9 +8,7 @@
     font-weight: 400;
     line-height: 26px;
     margin: 0px;
-
 }
-
 
 :root {
     --azul: #1A4FEE;
@@ -21,7 +19,10 @@
 body {
     background-image: url(../imagens/LandingPage-Mobile-a.png);
     background-size: contain;
+
 }
+
+/* LOGO E MENU  */
 
 header {
     display: inline-flex;
@@ -33,10 +34,55 @@ img#logo {
     margin-left: 38px;
 }
 
-header>nav {
-    margin-left: 100%;
-    margin-top: 40px;
+.sidebar {
+    position: fixed;
+    top: 0;
+    right: -250px; /* Oculta o menu à esquerda */
+    width: 250px;
+    height: 100%;
+    background-color: #33333362;
+    transition: right 0.8s ease;
 }
+
+.sidebar.active {
+    right: 0; /* Mostra o menu lateral ao ser ativado */
+}
+
+ul#menuf {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul#menuf > li {
+    padding: 10px 0;
+}
+
+ul li a {
+    color: rgb(253, 252, 252);
+    font-size: 16px;
+    font-weight: bolder;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+}
+
+ul li a:hover {
+    background-color: #555;
+}
+
+#toggleMenu {
+    position: absolute;
+    left: 80vw;
+    margin-top: 40px;
+    border: none;
+    background-color: #f3f5f954;
+    padding: 5px;
+    cursor: pointer;
+    z-index: 999;
+}
+
+/* OLHA FÉRIAS - ARRAIÁ 2023 */
 
 div#olha {
     width: 202px;
@@ -65,7 +111,7 @@ div#olha p {
     margin-top: 15px;
 }
 
-.reserve {
+.reserve {   /* BOTÃO RESERVE AGORA */
     margin-top: 20px;
     width: 191.38px;
     height: 50.7px;
@@ -77,7 +123,7 @@ div#olha p {
     font-weight: bolder;
 }
 
-.arraia {
+.arraia {     /* BOTÃO RESERVE ARRAIÁ */
     margin-top: 20px;
     width: 191.38px;
     height: 50.7px;
@@ -93,6 +139,8 @@ div#olha p {
 .arraia>img {
     margin-left: 20%;
 }
+
+/* TUDO DE BOM */
 
 .bom {
     text-align: center;
@@ -116,6 +164,8 @@ div#olha p {
     color: var(--azul);
 }
 
+/* SLIDES  */
+
 .slider {
     position: relative;
     max-width: 800px;
@@ -129,7 +179,6 @@ div#olha p {
     align-items: center;
     justify-content: center;
     height: 100%;
-    /* Remove esta linha */
 }
 
 .slide {
@@ -140,7 +189,7 @@ div#olha p {
     /* Adapte ao contêiner */
 }
 
-.slide img {
+.slide img.local {
     width: auto;
     /* Mantenha o tamanho original */
     max-width: 100%;
@@ -189,6 +238,14 @@ div#olha p {
 .sli img {
     border-radius: 100px;
     margin: 20px;
+    width: auto;
+    /* Mantenha o tamanho original */
+    max-width: 100%;
+    /* Adapte ao contêiner */
+    height: auto;
+    /* Mantenha o tamanho original */
+    vertical-align: middle;
+    box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.158);
 }
 
 
@@ -232,16 +289,22 @@ div#olha p {
     background-color: rgba(0, 0, 0, 0.8);
 }
 
+/* FIM SLIDES  */
+
 .reserve#centro {
     margin-left: 25%;
     margin-bottom: 50px;
     margin-top: 40px;
 }
 
+/* MAPA */
+
 iframe {
     width: 100vw;
     padding-bottom: 100px;
 }
+
+/* SLIDES COMENTARIOS  */
 
 div.comentarios {
     text-align: center;
@@ -270,28 +333,96 @@ div#slider2 {
     padding-bottom: 100px;
 }
 
+/* SLIDES OFERTAS  */
+
 div.slider#slider3 img {
     margin-left: 10%;
-    padding-bottom: 100px;
+    padding: 20px 0px
 }
 
 .off {
     width: 258px;
     height: 606px;
     border-radius: 10px;
+    padding-top: 10px;
+    background-color: var(--cinza);
+}
+
+.off p, h2, img, li, h3{
+    margin-left: 20px;
 }
 
 .off p#icons{
-    background-color: white;
+    color: black;
     border-radius: 100px;
     padding: 5px;
+    margin-left: -10px;
 }
 
 .off>p#icons>img{
     padding-bottom: 0;
     box-shadow: 0 0 0;
+    padding-right: 80px;
 }
 
+.off>p#icons>span{
+    background-color: white;
+    border-radius: 100px;
+    padding: 7px;
+    font-size: 9.22px;
+    font-weight: 700;
+    margin-left: 10px;
+}
+
+.off h2{
+    font-weight: 900;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.off p{
+    font-weight: 400;
+    font-size: 9.22px;
+    line-height: 15px;
+}
+
+.off h3{
+    font-weight: 700;
+    font-size: 27px;
+    letter-spacing: 1px;
+    padding-bottom: 20px;
+}
+
+.off li{
+    list-style-type: none;
+    margin-left: -20px;
+    font-weight: 500;
+    line-height: 40px;
+    letter-spacing: 1.5px;
+}
+
+.off li::before{
+    content: url(../imagens/check-preto.png);
+}
+
+
+.off#azul li::before{
+    content: url(../imagens/check.png);
+}
+
+.off>button{
+    width: 140px;
+    height: 40px;
+    margin: 0 23%;
+    
+}
+
+.off#azul {
+    background-color: var(--azul);
+    color: white;
+}
+
+/* PERGUNTAS */
 
 div#perguntas {
     text-align: center;
@@ -310,19 +441,30 @@ div#perguntas>aside.pergunta {
     display: inline-flex;
     margin-top: 40px;
     width: 310px;
-    height: 69.74px;
+    height: 70px;
     align-items: center;
-    border-radius: 6.64px;
-    box-shadow: 4px 4px 4px black;
+    border-radius: 7px;
+    background-color: var(--cinza);
 }
 
 div#perguntas>aside.pergunta>h2 {
-    font-size: 15.94px;
+    display: inline-flex;
+    font-size: 16px;
     font-weight: 700;
     line-height: 19.92px;
     text-align: left;
     color: var(--azul);
     margin-left: 25px;
+}
+
+#texto-escondido0, #texto-escondido1, #texto-escondido2{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    width: 300px;
+    text-align: justify;
+    margin: auto;
+    display: none;
 }
 
 div#perguntas>aside.pergunta>img {
@@ -333,10 +475,12 @@ div#perguntas>aside.pergunta>p {
     display: none;
 }
 
+/* RODAPÉ */
+
 footer {
-    /* background-color: var(--azul); */
-    margin-top: 180px;
-    padding-top: 80px;
+    background-color: var(--azul);
+    margin-top: 100px;
+    padding-top: 100px;
     padding-bottom: 80px;
     text-align: center;
     color: white;
@@ -401,4 +545,15 @@ footer>p#cep {
     width: 280px;
     margin: auto;
     line-height: 20px;
+}
+
+footer > a{
+    text-decoration: none;
+    color: white;
+}
+
+footer > a > p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 35px;
 }
